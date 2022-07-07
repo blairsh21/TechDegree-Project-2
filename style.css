@@ -1,69 +1,123 @@
 * {
-    box-sizing: border-box;
-  }
-  
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-  
-  /* Header Stylings */
-  
+
+a {
+text-decoration: none;
+}
+
+/* Header Stylings */
+
 header {
-    background-color: #3E567C;
-    color: #d1d5f0;
+  background-color: #3E567C;
+  color: #d1d5f0;
 }
-  
+
 h1 {
-    margin-top: 0;
-    padding-top: 15px;
+  margin-top: 0;
+  padding-top: 15px;
 }
-  
+
 .navbar-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-  
+
 img {
-    width: 87%;
-    border-radius: 10px;
-    margin-top: 15px;
+  width: 87%;
+  border-radius: 10px;
+  margin-top: 15px;
 }
-  
+
 .navbar-item {
-    display: block;
-    margin: 10px 20px;
-    padding: 10px 20px;
-    background-color: #748CAB;
-    border-radius: 20px;
-    font-weight: bold;
-    color: #dfe2f5;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: 87%;
+  background-color: #748CAB;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #dfe2f5;
 }
-  
+
 .header-paragprah {
-    font-size: 0.75rem;
-    line-height: 1.25rem;
-    padding-bottom: 20px;
-    
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  
 }
-  
-  
-  /* Main Content */
-  
+
+
+/* Main Content */
+
 main {
-    background-color: #dfe2f5;
-    width: 100%;
-    padding: 10px;
+  background-color: #dfe2f5;
+  width: 100%;
+  padding: 10px;
 }
-  
+
 .figure-image {
-    width: 100%;
+  width: 100%;
 }
-  
+
 figcaption {
-    margin-top: 15px;
-    font-size: 0.90rem;
-    line-height: 1.5rem;
+  margin-top: 15px;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+}
+
+/* Footer */
+
+footer p {
+font-size: 0.8rem;
+
+}
+
+
+.footer-nav {
+width: 90%;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.footer-nav p {
+font-size: 0.7rem;
+font-weight: bold;
+}
+
+
+@media screen and (min-width: 768px) {
+
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+figure {
+  flex-basis: 40%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.navbar-item {
+  display: inline-block;
+  width: 20%;
+
+}
+
 }
